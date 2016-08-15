@@ -8,7 +8,7 @@ Infers the best TripAdvisor URL for a given locale.
 Install the library with `npm install tripadvisor-locales`
 
 ```javascript
-var TripadvisorLocales = require('tripadvisor-locales');
+var TripadvisorLocales = require('tripadvisor-locales').TripadvisorLocales;
 
 TripadvisorLocales.bestDomainFor('en_US'); //-> 'www.tripadvisor.com'
 TripadvisorLocales.bestDomainFor("en_CA"); //-> 'www.tripadvisor.ca'
