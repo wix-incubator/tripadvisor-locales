@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
 
-Infers the best TripAdvisor URL for a given locale
+Infers the best TripAdvisor URL for a given locale.
 
 ### Usage
 Install the library with `npm install tripadvisor-locales`
