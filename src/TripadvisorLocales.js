@@ -4,7 +4,7 @@ import * as Tripadvisor from './Tripadvisor'
 import _ from 'lodash'
 
 
-export const bestDomainFor = ({locale}) => {
+export const bestDomainFor = (locale) => {
 	const localeDomain = Tripadvisor.localeDomains[locale]
 	if (localeDomain) {
 		return localeDomain
@@ -26,5 +26,5 @@ export const bestDomainFor = ({locale}) => {
 }
 
 export const bestPageUrlFor = ({locale, locationId}) => {
-	return `https://${bestDomainFor({locale})}/${locationId}`
+	return `https://${bestDomainFor(locale)}/${locationId}`
 }
