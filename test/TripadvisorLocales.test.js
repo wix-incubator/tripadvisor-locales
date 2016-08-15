@@ -5,17 +5,17 @@ import * as TripadvisorLocales from '../src/TripadvisorLocales'
 
 describe('TripadvisorLocales', () => {
 	describe('bestDomainFor', () => {
-		it ('gives first priority to locale domains', () => {
+		it ('gives first priority to locale-based domains', () => {
 			// We test 'fr_CH' because there's a different domain for the country 'CH'
 			expect(TripadvisorLocales.bestDomainFor('fr_CH')).to.equal('fr.tripadvisor.ch')
 		})
 		
-		it ('gives second priority to country locales', () => {
+		it ('gives second priority to country-based domains', () => {
 			// We test 'ar_EG' because there's a different domain for the language 'ar'
 			expect(TripadvisorLocales.bestDomainFor('ar_EG')).to.equal('www.tripadvisor.com.eg')
 		})
 		
-		it ('gives third priority to language locales', () => {
+		it ('gives third priority to language-based domains', () => {
 			expect(TripadvisorLocales.bestDomainFor('ar_AE')).to.equal('ar.tripadvisor.com')
 		})
 		
