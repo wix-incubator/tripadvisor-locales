@@ -1,7 +1,6 @@
 'use strict'
 
 import * as Tripadvisor from './Tripadvisor'
-import _ from 'lodash'
 
 
 export const bestDomainFor = (locale) => {
