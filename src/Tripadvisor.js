@@ -1,6 +1,7 @@
 'use strict'
 
 // The data below is based on the language selector in www.tripadvisor.com
+// Also see: https://developer-tripadvisor.com/content-api/supported-languages/
 
 // Maps languages to TripAdvisor domains
 export const languageDomains = {
